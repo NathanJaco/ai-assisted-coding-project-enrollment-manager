@@ -265,12 +265,6 @@ def show_class_page() -> None:
 
     st.divider()
 
-    with st.expander("What can I do on this page?"):
-        st.write(
-            "This page gives the student a simple class view after they enroll "
-            "or click Go to Class from the dashboard. More class content could be "
-            "added later, but this session only needs basic class information."
-        )
 
     if st.button("Back to Dashboard"):
         st.session_state["page"] = "dashboard"
